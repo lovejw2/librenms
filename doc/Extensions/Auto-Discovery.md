@@ -19,8 +19,8 @@ To add devices automatically we need to know your snmp details, examples of SNMP
 
 ```php
 // v1 or v2c
-$config['snmp']['community'][] = "my_custom_community";
-$config['snmp']['community'][] = "another_community";
+$config['snmp']['community'][] = ['my_custom_community'];
+$config['snmp']['community'][] = ['another_community'];
 
 // v3
 $config['snmp']['v3'][0]['authlevel'] = 'authPriv';
